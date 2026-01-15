@@ -7,7 +7,7 @@ const Project = ({img, title, desc, link}) => {
     const [show,setShow] = useState(false);
 
     return (
-        <a href={link}>
+        <a href={link} target='_blank' rel='noopener noreferrer'>
             <div className='project' onMouseEnter={()=>setShow(true)} onMouseLeave={()=>setShow(false)}>
             {
                 show ? (
