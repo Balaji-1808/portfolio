@@ -1,9 +1,14 @@
+.experience-card:hover{
+    cursor: pointer;
+    background-color: #f64c08;
+}
+
 .experienceContainer{
     display: flex;
     flex-direction: column;
     justify-content: center !important;
     align-items: center;
-    margin: 200px 0;
+    margin: 100px 0;
     color: white;
     font-family: 'Montserrat', sans-serif;
 }

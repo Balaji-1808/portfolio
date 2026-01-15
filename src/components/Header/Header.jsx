@@ -2,13 +2,15 @@ import React from "react";
 import { Link } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import "./Header.css";
 
 const Header = () => {
+  
   return (
     <div className="header">
       <div className="header__left">
         <h1>
-          Develop<span>er</span>
+          <span>Dev</span>eloper
         </h1>
       </div>
       <div className="header__right">
@@ -27,15 +29,14 @@ const Header = () => {
         <Link to="contact" smooth={true} duration={500}>
           <h4>Contact</h4>
         </Link>
-        <h4 className="header__rightButton">Join with me</h4>
+        <h4 className="header__rightButton">
+          Join with me
+        </h4>
       </div>
-      <div className="navbar-menu-toggle" >
+      <div className="navbar-menu-toggle">
         <FontAwesomeIcon icon={faBars} />
 
-        <div>
-            
-        </div>  
-
+        <div></div>
       </div>
     </div>
   );

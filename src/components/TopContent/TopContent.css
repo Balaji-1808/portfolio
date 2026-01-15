@@ -12,11 +12,13 @@
 }
 
 .topContent__container > p{
+    font-family: 'Josefin Sans', sans-serifs;
+    font-size: large;
     letter-spacing: 1px;
     text-align: left;
     padding-left: 3px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 5px;
 }
 
 .topContent__container > a > button{

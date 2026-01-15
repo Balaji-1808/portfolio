@@ -1,0 +1,16 @@
+.join-button {
+    background-color: #f64c08;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out, background-color 200ms ease-in-out;
+}
+
+.join-button:hover {
+    transform: scale(1.1);
+    background-color: #d84308;
+}

@@ -8,9 +8,9 @@ const ExperienceContainer = () => {
     <Element className='experienceContainer' id='exp'>
         <h1>Experience</h1>
         <div className='experienceContainer__Info'> 
-            <Experience number='10+' title={'Hands On Courses'}/>
-            <Experience number='5+' title={'Projects'} style={{backgroundColor:'#f64c08'}}/>
-            <Experience number='50+' title={'Event Participations'}/>
+            <Experience className="experience-card" number='5+' title={'Hands On Courses'} />
+            <Experience className="experience-card" number='10+' title={'Projects'} style={{backgroundColor:'#f64c08'}}/>
+            <Experience className="experience-card" number='50+' title={'Event Participations'}/>
         </div>
     </Element>
   )
