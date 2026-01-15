@@ -4,8 +4,8 @@ Welcome to my personal portfolio project! This project showcases my skills, proj
 
 ## Features
 
-- **Responsive Design**: The portfolio is fully responsive and works seamlessly on all devices, including desktops, tablets, and mobile phones.
-- **Interactive Header**: A sticky header with navigation links and a "Join" button that opens an email draft to connect with me.
+- **Responsive Design**: The portfolio is fully responsive and works seamlessly on all devices, including desktops, and mobile phones.
+- **Interactive Header**: A sticky header with navigation links.
 - **Project Showcase**: A section to display my projects with hover effects for better user interaction.
 - **Modern Design**: Clean and modern UI with smooth transitions and animations.
 
@@ -49,7 +49,7 @@ portfolio/
 
 2. Navigate to the project directory:
    ```bash
-   cd my_portfolio(jeejo)
+   cd portfolio
    ```
 
 3. Install dependencies:
