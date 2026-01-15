@@ -28,9 +28,30 @@ portfolio/
 │   │   ├── Connect/
 │   │   │   ├── Connect.jsx
 │   │   │   ├── Connect.css
+│   │   ├── Contact/
+│   │   │   ├── Contact.jsx
+│   │   │   ├── Contact.css
 │   │   ├── Project/
 │   │   │   ├── Project.jsx
 │   │   │   ├── Project.css
+│   │   ├── ProjectContainer/
+│   │   │   ├── ProjectContainer.jsx
+│   │   │   ├── ProjectContainer.css
+│   │   ├── ExperienceBox/
+│   │   │   ├── ExperienceBox.jsx
+│   │   │   ├── ExperienceBox.css
+│   │   ├── ExperienceContainer/
+│   │   │   ├── ExperienceContainer.jsx
+│   │   │   ├── ExperienceContainer.css
+│   │   ├── SkillContainer/
+│   │   │   ├── SkillContainer.jsx
+│   │   │   ├── SkillContainer.css
+│   │   ├── TopContainer/
+│   │   │   ├── TopContainer.jsx
+│   │   │   ├── TopContainer.css
+│   │   ├── TopContent/
+│   │   │   ├── TopContent.jsx
+│   │   │   ├── TopContent.css
 │   ├── App.js
 │   ├── index.js
 │
@@ -82,6 +103,4 @@ This project is licensed under the MIT License. Feel free to use and modify it a
 
 ## Contact
 
-If you'd like to get in touch, feel free to reach out on social medias via the in given `Contact` box or email me directly at `balaji.s.1808@gmail.com
-
-`.
+If you'd like to get in touch, feel free to reach out on social medias via the in given `Contact` box or email me directly at `balaji.s.1808@gmail.com`.
