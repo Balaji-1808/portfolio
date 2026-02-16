@@ -1,0 +1,132 @@
+.project > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    justify-content: space-between;
+    display: flex;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.project:hover > img{
+    transform: scale(1.1);
+    filter: blur(5px);
+}
+
+.project{
+    margin: 0;
+    width: 100%;
+    aspect-ratio: 350 / 179;
+    display: flex;
+    justify-content: space-between;
+    transition: all 300ms ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    min-height: 200px;
+}
+
+.project:hover{
+    color: white;
+    background: linear-gradient(135deg, #f64c08 0%, #ff6b35 100%);
+    transform: scale(1.08) translateY(-10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 15px 40px rgba(246, 76, 8, 0.4);
+}
+
+.project__Content{
+    padding: 20px;
+    text-align: center;
+    animation: slideUp 0.4s ease;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project__Content > h4{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.project__Content > p{
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+@media screen and (max-width:768px) {
+    .project{
+        min-height: 180px;
+    }
+
+    .project > img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .project__Content > h4{
+        font-size: 18px;
+    }
+
+    .project__Content > p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .project{
+        min-height: 150px;
+        border-radius: 8px;
+    }
+
+    .project__Content{
+        padding: 15px;
+    }
+
+    .project__Content > h4{
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+
+    .project__Content > p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .project{
+        min-height: 140px;
+        border-radius: 6px;
+    }
+
+    .project__Content{
+        padding: 12px;
+    }
+
+    .project__Content > h4{
+        font-size: 14px;
+    }
+
+    .project__Content > p{
+        font-size: 11px;
+    }
+}

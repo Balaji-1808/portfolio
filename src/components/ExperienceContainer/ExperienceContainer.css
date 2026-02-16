@@ -1,0 +1,70 @@
+.experience-card:hover{
+    cursor: pointer;
+    background-color: #f64c08;
+}
+
+.experienceContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+    margin: 100px 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 20px;
+}
+
+.experienceContainer > h1{
+    background: linear-gradient(135deg, #ffffff 0%, #f64c08 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.experienceContainer > h1{
+    padding-bottom: 20px;
+}
+
+.experienceContainer__Info{
+    background: url('../../assets/Technical-Skills.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    z-index: 1000px;
+    width: 80vw;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .85), 0 8px 30px rgba(246, 76, 8, 0.2);
+    display: flex;
+    justify-content: space-evenly;        
+    align-items: center;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(246, 76, 8, 0.2);
+}
+
+.experienceContainer__Info:hover{
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, .80), 0 12px 40px rgba(246, 76, 8, 0.3);
+}
+
+@media screen and (max-width:700px) {
+    
+    .experienceContainer{
+        max-height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .experienceContainer__Info{
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+    }
+}

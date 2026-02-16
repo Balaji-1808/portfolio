@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.skillContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:100px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(20, 20, 20, 0.5) 100%);
+    border-radius: 10px;
+}
+
+.skillContainer__text{
+    color: white;
+    flex: 0.6;
+    text-align: left;
+    max-width: 500px;
+    margin-bottom: 5px;
+}
+
+.skillContainer__text > h2{
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #ffffff 0%, #f64c08 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.skillContainer__image{
+    flex: 0.4;
+    text-align: center;
+    margin-right: 100px;
+}
+
+.skillContainer__image > img{
+    object-fit: contain;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 10px 40px rgba(246, 76, 8, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 1.0; /* Make the image darker */
+}
+
+.skillContainer__image > img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 50px rgba(246, 76, 8, 0.4);
+    opacity: 0.95; /* Slightly increase opacity on hover */
+}
+
+.skillContainer__skillSet > h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding-top: 30px;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.skillContainer__slider > .MuiLinearProgress-colorPrimary{
+    background-color: rgba(88,88,88, 0.5);
+    border-radius: 10px;
+    height: 8px;
+}
+
+.skillContainer__slider1 > span > .MuiLinearProgress-barColorPrimary{
+    background-color: tomato;
+}
+
+.skillContainer__slider2 > span > .MuiLinearProgress-barColorPrimary{
+    background-color: rgb(156,26,3);
+}
+
+.skillContainer__slider3 > span > .MuiLinearProgress-barColorPrimary{
+    background-color: rgb(62, 222, 57);
+}
+
+.skillContainer__slider4 > span > .MuiLinearProgress-barColorPrimary{
+    background-color: rgb(142, 60, 183);
+}
+
+.skillContainer__slider5 > span > .MuiLinearProgress-barColorPrimary{
+    background-color: rgb(136,146,0);
+}
+
+@media screen and (max-width:1100px) {
+    .skillContainer{
+        flex-direction: column;
+    }    
+
+    .skillContainer__image{
+        display: none;
+    }
+
+    .skillContainer__text{
+        width: 300px;
+    }
+}

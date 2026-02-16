@@ -1,0 +1,96 @@
+.contact{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    margin: 100px 0;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.3) 0%, rgba(20, 20, 20, 0.3) 100%);
+    border-radius: 10px;
+}
+
+.contact > h1{
+    background: linear-gradient(135deg, #ffffff 0%, #f64c08 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.contact_container{
+    border: 1px solid rgba(246, 76, 8, 0.3);
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 20px;
+    background: linear-gradient(135deg, rgba(246, 76, 8, 0.05) 0%, rgba(0, 0, 0, 0.3) 100%);
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.contact_container:hover{
+    border-color: #f64c08;
+    box-shadow: 0 12px 40px rgba(246, 76, 8, 0.2);
+    transform: translateY(-5px);
+}
+
+.contact_container > p{
+    font-size: 16px;
+    text-align: left;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.contact_container > p:hover{
+    transform: translateX(5px);
+}
+
+.contact_container > p > span{
+    color: #f64c08;
+}
+
+.contact_container > p > a{
+    color: #f64c08;
+}
+
+.contact__Icon > a > button > .MultiButtonBase-root{
+    color: white;
+}
+
+.contact__Icon > a > button > .MuiSvgIcon-root{
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.contact__Icon > a > button:hover > .MuiSvgIcon-root{
+    color: #f64c08;
+    transform: scale(1.2) rotateY(10deg);
+}
+
+.contact__Icon > a > button{
+    transition: all 0.3s ease;
+}
+
+.contact__Icon > a > button:hover{
+    transform: translateY(-5px);
+}
+
+@media screen and (max-width:600px) {
+    .contact_container{
+        width: 300px;
+    }
+
+    .contact_container > p{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

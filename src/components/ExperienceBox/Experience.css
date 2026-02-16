@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    width: 200px;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(246, 76, 8, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(246, 76, 8, 0.3);
+}
+
+.experience:hover{
+    background: linear-gradient(135deg, #f64c08 0%, rgba(246, 76, 8, 0.7) 100%);
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(246, 76, 8, 0.4);
+    border-color: #f64c08;
+}
+
+.experience > p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.experience > h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 36px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #ffffff 0%, #ff6b35 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+@media screen and (max-width:700px) {
+    .experience{
+        width: 200px;
+        height: 100px;
+    }
+}

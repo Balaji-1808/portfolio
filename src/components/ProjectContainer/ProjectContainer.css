@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center !important;
+    font-family: 'Montserrat', sans-serif;
+    padding: 80px 40px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2) 0%, rgba(20, 20, 20, 0.2) 100%);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.projectContainer > h1{
+    padding-bottom: 15px;
+    background: linear-gradient(135deg, #ffffff 0%, #f64c08 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.projectContainer > p{
+    padding-bottom: 30px;
+    font-size: 16px;
+    color: #cccccc;
+    letter-spacing: 0.5px;
+}
+
+.projectContainer__projects{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1400px;
+    padding: 0 20px;
+    justify-items: center;
+}
+
+@media screen and (max-width:1200px) {
+    .projectContainer{
+        padding: 60px 30px;
+    }
+
+    .projectContainer__projects{
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .projectContainer{
+        padding: 50px 20px;
+        margin-top: 50px;
+    }
+
+    .projectContainer > h1{
+        font-size: 28px;
+    }
+
+    .projectContainer > p{
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .projectContainer__projects{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .projectContainer{
+        padding: 40px 15px;
+    }
+
+    .projectContainer > h1{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .projectContainer > p{
+        font-size: 13px;
+        padding-bottom: 20px;
+    }
+
+    .projectContainer__projects{
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .projectContainer__projects{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}

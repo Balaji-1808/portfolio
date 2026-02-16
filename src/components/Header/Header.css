@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Metal+Mania&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,500;1,500&family=Rye&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+.header{
+    display: flex;
+    align-items: center;
+    color: white;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(20, 20, 20, 0.95) 100%);
+    top: 0;
+    position: sticky;
+    z-index: 2000;
+    box-shadow: 0 4px 30px rgba(246, 76, 8, 0.1);
+    border-bottom: 1px solid rgba(246, 76, 8, 0.2);
+    transition: all 0.3s ease;
+}
+
+.header__left{
+    flex: 0.4;
+}
+
+.header__left > h1{
+    text-align: center;
+    font-family: "Alata",sans-serif;
+    letter-spacing: 2px;
+    padding: 20px 0;
+    font-size: 36px;
+    font-weight: 900;
+    /* background: linear-gradient(135deg, #ffffff 0%, #f64c08 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    /* background-clip: text; */
+    transition: transform 0.3s ease;
+}
+
+.header__left > h1 > span{
+    color: #f64c08;
+}
+
+.header__right{
+    display: flex;
+    flex: 0.6;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header__right > a > h4{
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    font-family: "Ubuntu", sans-serif !important;
+    position: relative;
+    padding: 10px 20px;
+    background: transparent;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    margin: 0 5px;
+    font-weight: 500;
+}
+
+.header__right > a > h4::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+    transition: width 0.3s ease;
+    display: none;
+}
+
+.header__right > a > h4:hover::after{
+    width: 0%;
+}
+
+.header__right > a > h4:hover{
+    transform: translateY(-3px) scale(1.05);
+    background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+    color: white;
+    border-color: rgba(246, 76, 8, 0.3);
+    box-shadow: 0 8px 20px rgba(22, 33, 62, 0.4);
+}
+
+.header__rightButton{
+    background: linear-gradient(135deg, #f64c08 0%, #ff6b35 100%);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Josefin sans', sans-serif !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(246, 76, 8, 0.3);
+    font-weight: 500;
+}
+
+.header__rightButton:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(246, 76, 8, 0.5);
+}
+
+/* Mobile Menu Styles */
+.mobile-menu{
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.98) 0%, rgba(20, 20, 20, 0.98) 100%);
+    flex-direction: column;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(246, 76, 8, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    z-index: 1999;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mobile-menu > a > h4 {
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Ubuntu", sans-serif !important;
+    color: white;
+    margin: 0;
+    padding: 10px 15px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-weight: 500;
+}
+
+.mobile-menu > a {
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(246, 76, 8, 0.1);
+    transition: all 0.3s ease;
+}
+
+.mobile-menu > a:hover {
+    background-color: transparent;
+}
+
+.mobile-menu > a > h4:hover {
+    color: white;
+    padding-left: 15px;
+    transform: translateX(5px);
+    background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+    border-color: rgba(246, 76, 8, 0.3);
+    box-shadow: 0 6px 15px rgba(22, 33, 62, 0.3);
+}
+
+.mobile-menu__joinButton {
+    background: linear-gradient(135deg, #f64c08 0%, #ff6b35 100%) !important;
+    color: white !important;
+    margin: 15px 25px !important;
+    padding: 12px 30px !important;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(246, 76, 8, 0.3);
+}
+
+.mobile-menu__joinButton:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(246, 76, 8, 0.5);
+}
+
+.navbar-menu-toggle{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.navbar-menu-toggle:hover{
+    transform: scale(1.1);
+    color: #f64c08;
+}
+
+@media screen and (max-width:950px) {
+    
+    .header{
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+
+    .header__left{
+        padding-left: 0;
+        flex: 1;
+    }
+
+    .header__left > h1{
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    .header__right{
+        display: none;
+    }
+
+    .navbar-menu-toggle{
+        display: flex !important;
+        margin-right: 10px;
+    }
+
+    .mobile-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header {
+        flex-wrap: wrap;
+    }
+
+    .header__left > h1{
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    .mobile-menu > a {
+        padding: 12px 20px;
+    }
+
+    .mobile-menu__joinButton {
+        margin: 15px 20px !important;
+        padding: 10px 20px !important;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .header__left > h1{
+        font-size: 16px;
+    }
+
+    .mobile-menu > a > h4 {
+        font-size: 14px;
+    }
+
+    .mobile-menu > a {
+        padding: 10px 15px;
+    }
+
+    .mobile-menu__joinButton {
+        margin: 10px 15px !important;
+        padding: 8px 15px !important;
+        font-size: 12px;
+    }
+}
