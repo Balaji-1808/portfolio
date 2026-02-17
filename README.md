@@ -97,10 +97,6 @@ The portfolio is designed to be fully responsive. The `@media` queries in the CS
 
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. All contributions are welcome!
 
-## License
-
-This project is licensed under the MIT License. Feel free to use and modify it as per your needs.
-
 ## Contact
 
 If you'd like to get in touch, feel free to reach out on social medias via the in given `Contact` box or email me directly at `balaji.s.1808@gmail.com`.
